@@ -4,7 +4,7 @@
 const http = require("http");
 const fs = require("fs/promises");
 const path = require("path");
-const { fullPath, contentType } = require("../utils/utils.js");
+const { contentType } = require("../utils/utils.js");
 
 // The path to serve files from is passed as an argument
 const serveFromPath = process.argv[2] || "./";
