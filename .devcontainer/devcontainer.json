@@ -1,0 +1,19 @@
+{
+    "name": "Full-Stack Web Development",
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:20",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "ms-azuretools.vscode-docker",
+                "ms-vscode-remote.remote-containers",
+                "MS-vsliveshare.vsliveshare",
+                "ritwickdey.LiveServer"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/warrenbuckley/codespace-features/sqlite:1": {}
+    }
+}

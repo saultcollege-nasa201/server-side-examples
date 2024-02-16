@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <%- include('partials/nav') -%>
+    <h1>Posts</h1>
+    <p><a href="/posts/new">Add new post</a></p>
+    <ul>
+        <% posts.forEach(post => { %>
+            <li>
+                <a href="/posts/<%= post.id %>"><%= post.title %></a>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>

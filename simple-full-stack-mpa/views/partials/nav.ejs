@@ -1,0 +1,15 @@
+<header>
+    <nav style="display:flex;">
+        <div style="flex-grow: 1;">
+            <a href="/">Home</a> | <a href="/posts">Posts</a>
+        </div>
+        <div style="margin-left: auto;">
+            <% if (user) { %>
+                <a href="/users/<%= user.id %>"><%= user.username %></a> : <a href="/logout">Logout</a>
+            <% } else { %>
+                <a href="/login">Login</a> | <a href="/register">Register</a>
+            <% } %>
+        </div>
+    </nav>
+</header>
+
