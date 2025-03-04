@@ -1,6 +1,11 @@
 {
-    "name": "Full-Stack Web Development",
-    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:20",
+    "name": "NASA201 - Server-side examples",
+    "runArgs": ["--name", "nasa201-server-side-examples" ],
+    "image": "mcr.microsoft.com/devcontainers/php:8",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {},
+        "ghcr.io/warrenbuckley/codespace-features/sqlite:1": {}
+    },
     "customizations": {
         "vscode": {
             "extensions": [
@@ -9,11 +14,12 @@
                 "ms-azuretools.vscode-docker",
                 "ms-vscode-remote.remote-containers",
                 "MS-vsliveshare.vsliveshare",
-                "ritwickdey.LiveServer"
+                "ritwickdey.LiveServer",
+                "github.copilot",
+                "github.copilot-chat",
+                "bmewburn.vscode-intelephense-client",
+                "xdebug.php-debug"
             ]
         }
-    },
-    "features": {
-        "ghcr.io/warrenbuckley/codespace-features/sqlite:1": {}
     }
 }
