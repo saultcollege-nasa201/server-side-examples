@@ -1,9 +1,8 @@
 {
     "name": "NASA201 - Server-side examples",
     "runArgs": ["--name", "nasa201-server-side-examples" ],
-    "image": "mcr.microsoft.com/devcontainers/php:8",
+    "image": "mcr.microsoft.com/devcontainers/node:22",
     "features": {
-        "ghcr.io/devcontainers/features/node:1": {},
         "ghcr.io/warrenbuckley/codespace-features/sqlite:1": {}
     },
     "customizations": {

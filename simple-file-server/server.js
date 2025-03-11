@@ -8,7 +8,7 @@ const { contentType } = require("../utils/utils.js");
 
 // The path to serve files from is passed as an argument
 const serveFromPath = process.argv[2] || "./";
-const PORT = 8000; // The port to listen on
+const PORT = process.argv[3] || 8000; // The port to listen on
 
 // Configure our HTTP server to respond to any requests.
 http.createServer(handleRequest)

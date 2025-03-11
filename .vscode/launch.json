@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "type": "node",
             "request": "launch",
@@ -11,8 +12,19 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\simple-mpa-server\\server.js",
-            "args": ["simple-mpa-server\\site"],
+            "program": "${workspaceFolder}/simple-mpa-server/server.js",
+            "args": ["simple-mpa-server/site"],
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug simple-file-server",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/simple-file-server/server.js",
+            "args": ["simple-file-server/site", "8080"],
         }
     ]
 }
